@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
-import fetchMemes, { getMemeData, hasThumbnail } from "./fetchMemes";
+import { fetchMemes } from "./fetchMemes";
+import { getMemeData, hasThumbnail } from "./utility";
 
 const useTheForce = () => {
   const [memes, setMemes] = useState([]);
